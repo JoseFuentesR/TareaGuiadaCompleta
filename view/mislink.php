@@ -6,7 +6,7 @@ session_start();
     require_once("../models/LinksModel.php");
     if(isset($_SESSION['usuario'])){
     $model = new LinksModel();
-    $Links = $model->getaAllLinksByEmail($_SESSION['usuario']['email']);
+    $links = $model->getaAllLinksByEmail($_SESSION['usuario']['email']);
     }
 ?>
 
