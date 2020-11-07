@@ -5,8 +5,8 @@ namespace models;
 class Conexion
 {
 public static $user = "root";
-public static $pass = "root";
-public static $URL = "mysql:host=localhost:dbname=applink";
+public static $pass = "";
+public static $URL = "mysql:host=localhost;dbname=applink";
 
 public static function conector()
 {

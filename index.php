@@ -15,9 +15,23 @@
             <div class="col l4 m4 s12">
                 <h3 class="center">App Links</h3>
                 <h6 class="center">Guarda tus paginas web</h6>
-                <form action="#" method="POST">
+
+                <p class="red-text">
+                <?php
+                     session_start();
+                     if (isset($_SESSION['error'])) {
+                         echo $_SESSION['error'];
+                         unset($_SESSION['error']);
+                     }
+
+                ?>
+
+                </p>
+
+                
+                <form action="controllers/LoginController.php" method="POST">
                     <div class="input-field">
-                        <input id="email" type="text" name="email">
+                        <input id="email" type="email" name="email">
                         <label for="email">Email</label>
                     </div>
                     <div class="input-field">

@@ -33,7 +33,7 @@ class RegistroControl{
         }else{
             $_SESSION['error'] = "hubo un error en la base de datos";
         }
-        header("Location:../Registro.php");
+        header("Location: ../registro.php");
     }
 
 }
